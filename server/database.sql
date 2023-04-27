@@ -1,0 +1,9 @@
+CREATE DATABASE todolist;
+
+CREATE TABLE todo(
+ todo_id SERIAL PRIMARY KEY,
+ title VARCHAR(255) NOT NULL,
+ end_date DATE NOT NULL,
+ description VARCHAR(255),
+ create_date DATE NOT NULL DEFAULT CURRENT_DATE
+);
